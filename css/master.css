@@ -1,0 +1,15 @@
+body {
+    padding-top: 20px;
+}
+
+.spaceTop{
+  padding-top: 100px;
+}
+
+.footerSticky  {
+
+    text-align: center;
+    bottom: 0;
+    height: 40px;
+
+}
