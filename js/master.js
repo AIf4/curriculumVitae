@@ -1,12 +1,10 @@
 // general functions
 $(function() {
-    // $("#profile").hide();
+
     $("#academy").hide();
     $("#skill").hide();
     $("#laboral").hide();
     $("#contact").hide();
-
-
 
     // eventos
     $("#profileButton").click(function(){
@@ -18,26 +16,32 @@ $(function() {
     });
 
     $("#academyButton").click(function(){
-        $("#academy").toggle();
+
+
+        $("#academy").show();
         $("#profile").hide();
         $("#skill").hide();
         $("#laboral").hide();
         $("#contact").hide();
+
     });
 
     $("#skillButton").click(function(){
+        var chart = new charts();
         $("#academy").hide();
         $("#profile").hide();
-        $("#skill").toggle();
+        $("#skill").show();
         $("#laboral").hide();
         $("#contact").hide();
+        chart.skillCharts();
+        // (new charts()).showCharts();
     });
 
     $("#laboralButton").click(function(){
         $("#academy").hide();
         $("#profile").hide();
         $("#skill").hide();
-        $("#laboral").toggle();
+        $("#laboral").show();
         $("#contact").hide();
     });
 
@@ -46,6 +50,6 @@ $(function() {
         $("#profile").hide();
         $("#skill").hide();
         $("#laboral").hide();
-        $("#contact").toggle();
+        $("#contact").show();
     });
 });
